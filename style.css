@@ -933,6 +933,10 @@ video {
         width: 45%
     }
 
+    .max-\[767px\]\:w-\[49\%\] {
+        width: 49%
+    }
+
     .max-\[767px\]\:w-\[70\%\] {
         width: 70%
     }
@@ -979,6 +983,10 @@ video {
 
     .max-\[767px\]\:p-0\.5 {
         padding: .125rem
+    }
+
+    .max-\[767px\]\:p-\[3px\] {
+        padding: 3px
     }
 
     .max-\[767px\]\:px-2 {
