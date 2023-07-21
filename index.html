@@ -11,10 +11,11 @@
 </head>
 
 <body class="bg-gradient-to-r from-indigo-500 via-cyan-500 to-blue-500 box-border">
-    <div class="md:hidden text-2xl font-bold text-center my-10">Mobile Version Not Yet Completed.</div>
-    <header class="hidden md:block">
+    <!-- <div class="text-2xl font-bold text-center my-10">Mobile Version Not Yet Completed.</div> -->
+    <header class="">
         <div
-            class="xl:w-1/5 md:w-[35%] lg:w-[29%] md:bg-[#444] md:text-4xl md:space-x-3 xl:space-x-2 md:m-auto md:text-center md:py-2 md:rounded-full md:mt-4">
+            class="xl:w-1/5 md:w-[35%] lg:w-[29%] md:bg-[#444] md:text-4xl md:space-x-3 xl:space-x-2 md:m-auto md:text-center md:py-2 md:rounded-full md:mt-4
+             max-[767px]:w-[45%] max-[767px]:bg-[#444] max-[767px]:text-2xl max-[767px]:space-x-2 max-[767px]:rounded-full max-[767px]:p-0.5 max-[767px]:m-auto max-[767px]:mt-2 max-[767px]:text-center">
             <i class='bx bx-home text-[#aaa] hover:text-cyan-300 cursor-pointer' id="home-icon" onclick="homeBtn()"></i>
             <i class='bx bx-user text-[#aaa] hover:text-cyan-300 cursor-pointer' id="about-icon"
                 onclick="aboutBtn()"></i>
@@ -26,16 +27,19 @@
     </header>
 
 
-    <div class="hidden md:block">
-        <div class="xl:w-[87%] lg:w-[85%] md:w-[90%] bg-[#444] m-auto mt-10 rounded-3xl flex justify-between">
+    <div class="">
+        <div
+            class="xl:w-[87%] lg:w-[85%] md:w-[90%] bg-[#444] m-auto mt-10 rounded-3xl flex justify-between max-[767px]:flex-col max-[767px]:w-[87%]">
             <div
-                class="flex-col xl:h-[600px] lg:h-[500px] xl:w-[400px] lg:w-[300px] md:w-[340px] bg-[#444] items-center rounded-tl-3xl rounded-bl-3xl">
-                <div class="mt-16">
+                class="flex-col xl:h-[600px] lg:h-[500px] xl:w-[400px] lg:w-[300px] md:w-[340px] bg-[#444] items-center rounded-tl-3xl rounded-bl-3xl max-[767px]:rounded-tr-3xl">
+                <div class="mt-16 max-[767px]:mt-6">
                     <img src="images/My-pic.jpg" alt="My Pic"
-                        class="lg:w-48 md:w-40 rounded-full border-2 border-white m-auto">
+                        class="max-[374px]:w-32 max-[767px]:w-36 lg:w-48 md:w-40 rounded-full border-2 border-white m-auto">
                 </div>
                 <div class="text-center">
-                    <h1 class="lg:text-4xl md:text-3xl font-bold text-[#f5f5f5] pt-4 mb-2">Arijit Saha</h1>
+                    <h1 class="max-[767px]:text-3xl lg:text-4xl md:text-3xl font-bold text-[#f5f5f5] pt-4 mb-2">Arijit
+                        Saha
+                    </h1>
                     <p class="lg:text-lg md:text-[15px] text-[#bbb]">3rd Year Student</p>
                     <div class="icons text-2xl md:text-xl text-[#f5f5f5] my-3">
                         <a href="https://www.linkedin.com/in/arijit-saha-a6064521b" target="_blank"> <i
@@ -48,9 +52,9 @@
                         <a href="https://www.instagram.com/___iamrohan___" target="_blank"> <i
                                 class='bx bxl-instagram hover:cursor-pointer hover:bg-gray-400 hover:rounded-full p-1.5 duration-300'></i></a>
                     </div>
-                    <div class="mt-10">
+                    <div class="mt-10 max-[767px]:my-5">
                         <button
-                            class="border-2 border-[#f5f5f5] text-[#f5f5f5] lg:px-7 md:px-5 lg:py-2 md:py-1 rounded-full text-lg hover:bg-white hover:text-cyan-500 duration-200">Download
+                            class="border-2 border-[#f5f5f5] text-[#f5f5f5] lg:px-7 md:px-5 lg:py-2 md:py-1 rounded-full text-lg hover:bg-white hover:text-cyan-500 duration-200 max-[767px]:px-3 max-[767px]:py-1">Download
                             CV</button>
                     </div>
                 </div>
@@ -58,9 +62,12 @@
 
             <!-- Home section  -->
 
-            <div class="w-3/4 rounded-3xl bg-[#222] text-white pt-40 flex-col items-center h-[600px]" id="home-sec">
+            <div class="md:w-3/4 rounded-3xl bg-[#222] text-white pt-40 flex-col items-center h-[600px] max-[767px]:w-[100%]"
+                id="home-sec">
                 <div class="text-center">
-                    <h1 class="xl:text-6xl md:text-5xl font-bold font-[poppins,Helvetica,sans-serif] mt-20">Arijit Saha
+                    <h1
+                        class="xl:text-6xl md:text-5xl font-bold font-[poppins,Helvetica,sans-serif] mt-20 max-[767px]:mt-10 max-[767px]:text-4xl">
+                        Arijit Saha
                     </h1>
                     <p class="mt-5 text-2xl text-[#aaa] font-mono">Frontend-Developer</p>
                 </div>
@@ -68,13 +75,16 @@
 
             <!-- About section  -->
 
-            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden overflow-auto" id="about-sec">
-                <div>
-                    <h3 class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14">About<span
-                            class="text-cyan-500">
+            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden overflow-auto max-[767px]:w-[100%]"
+                id="about-sec">
+                <div class="">
+                    <h3
+                        class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
+                        About<span class="text-cyan-500">
                             Me</span></h3>
-                    <div class="flex justify-start xl:text-[16px]">
-                        <p class="w-2/5 ml-14 text-[#d5d5d5] md:text-sm xl:text-[16px]">
+                    <div class="flex justify-start xl:text-[16px] max-[767px]:flex-col">
+                        <p
+                            class="w-2/5 max-[767px]:w-fit max-[767px]:text-base max-[767px]:ml-0 max-[767px]:px-2 ml-14 text-[#d5d5d5] md:text-sm xl:text-[16px]">
                             Hello, I'm Arijit Saha, a third-year computer science engineering student pursuing a
                             Bachelor's degree at Jis University. My focus area is front-end development, and I'm
                             passionate about creating
@@ -83,7 +93,7 @@
                             I have hands-on experience with HTML, CSS, JavaScript, and CSS frameworks such as Tailwind
                             CSS. I enjoy working on projects that challenge my creativity and problem-solving skills
                             while delivering value to end-users.</p>
-                        <div class="xl:ml-14 md:ml-7 space-y-2">
+                        <div class="xl:ml-14 md:ml-7 space-y-2 max-[767px]:mt-5 max-[767px]:px-2">
                             <p class="text-cyan-500 font-semibold">Age <span class="text-[#d5d5d5]">20</span></p>
                             <p class="text-cyan-500 font-semibold">Residence <span class="text-[#d5d5d5]">India</span>
                             </p>
@@ -96,11 +106,12 @@
                             </p>
                         </div>
                     </div>
-                    <h3 class="text-3xl font-bold font-[poppins,Helvetica,sans-serif] pt-10 pb-10 mt-4 ml-14">What<span
-                            class="text-cyan-500">
+                    <h3
+                        class="text-3xl font-bold font-[poppins,Helvetica,sans-serif] pt-10 pb-10 mt-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
+                        What<span class="text-cyan-500">
                             I Do</span></h3>
-                    <div class="flex md:justify-around">
-                        <div class="xl:ml-3 md:w-[40%]">
+                    <div class="flex md:justify-around max-[767px]:flex-col">
+                        <div class="xl:ml-3 md:w-[40%]  max-[767px]:flex-col max-[767px]:text-center">
                             <i class='bx bx-desktop  text-5xl text-cyan-700'></i>
                             <!-- <i class='bx bx-laptop text-5xl text-cyan-700'></i> -->
                             <h4 class="xl:text-xl md:text-lg font-bold">Frontend-Development</h4>
@@ -108,7 +119,7 @@
                                 As a front-end developer, I have developed strong skills in creating visually appealing
                                 and responsive user interfaces using HTML, CSS, and JavaScript. </p>
                         </div>
-                        <div class="md:w-[40%]">
+                        <div class="md:w-[40%] max-[767px]:flex-col max-[767px]:text-center max-[767px]:my-4">
                             <i class='bx bx-devices text-5xl text-cyan-700'></i>
                             <!-- <i class='bx bx-laptop text-5xl text-cyan-700'></i> -->
                             <h4 class="xl:text-xl lg:text-lg font-bold">Web Design</h4>
@@ -119,46 +130,47 @@
                                 responsive designs that adapt to different screen sizes and devices.</p>
                         </div>
                     </div>
-                    <h3 class="text-3xl font-bold font-[poppins,Helvetica,sans-serif] pt-10 pb-10 mt-4 ml-14">
+                    <h3
+                        class="text-3xl font-bold font-[poppins,Helvetica,sans-serif] pt-10 pb-10 mt-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
                         Coding<span class="text-cyan-500">
                             skills</span></h3>
                     <!-- progress bar -->
                     <!-- development -->
-                    <div class="flex justify-around ml-14">
+                    <div class="flex justify-around ml-14 max-[767px]:ml-0 max-[767px]:flex-col">
                         <div class="w-full">
                             <div class="w-full mb-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>HTML</span>
                                     <span>90%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[90%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
                             <div class="w-full my-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>CSS</span>
                                     <span>80%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[80%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
                             <div class="w-full my-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>Tailwind CSS</span>
                                     <span>80%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[80%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
                             <div class="w-full my-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>JavaScript</span>
                                     <span>50%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[50%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
@@ -166,42 +178,43 @@
                         <!-- programming -->
                         <div class="w-full">
                             <div class="w-full mb-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>C/C++</span>
                                     <span>80%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[80%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
                             <div class="w-full my-4">
-                                <div class="flex justify-between w-[55%]">
+                                <div class="flex justify-between w-[55%] max-[767px]:m-auto">
                                     <span>Problem Solving Skills</span>
                                     <span>60%</span>
                                 </div>
-                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full">
+                                <div class="w-[55%] h-3 border-2 border-cyan-600 rounded-full max-[767px]:m-auto">
                                     <div class="w-[60%] h-full bg-cyan-400 border-2 border-cyan-400 rounded-full"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold font-[poppins,Helvetica,sans-serif] pt-8 pb-4 ml-14">Fun<span
-                            class="text-cyan-500"> Facts</span></h3>
-                    <div class="flex justify-evenly py-8">
+                    <h3
+                        class="text-2xl font-bold font-[poppins,Helvetica,sans-serif] pt-8 pb-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
+                        Fun<span class="text-cyan-500"> Facts</span></h3>
+                    <div class="flex justify-evenly py-8 max-[767px]:flex-col">
                         <div
-                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 md:p-2">
-                            <i class='bx bx-check-double lg:text-3xl xl:text-5xl text-cyan-500 mt-4'></i>
-                            <h4 class="xl:text-xl lg:text-lg font-mono font-bold my-2">Project completed</h4>
-                            <span class="xl:text-5xl lg:text-3xl text-[#aaa]">5</span>
+                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 max-[767px]:w-[70%] max-[767px]:py-5 max-[767px]:m-auto max-[767px]:my-4 min-[400px]:text-3px">
+                            <i class='bx bx-check-double md:text-3xl xl:text-5xl text-cyan-500 mt-4'></i>
+                            <h4 class="xl:text-xl md:text-lg font-mono font-bold my-2">Project completed</h4>
+                            <span class="xl:text-5xl md:text-3xl text-[#aaa]">5</span>
                         </div>
                         <div
-                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 md:p-2">
+                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 md:p-2 max-[767px]:w-[70%] max-[767px]:py-5 max-[767px]:m-auto max-[767px]:my-4">
                             <i class='bx bx-heart lg:text-3xl xl:text-5xl text-cyan-500 mt-4'></i>
                             <h4 class="xl:text-xl lg:text-lg font-mono font-bold my-2">Happy Clients</h4>
                             <span class="xl:text-5xl lg:text-3xl text-[#aaa]">0</span>
                         </div>
                         <div
-                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 md:p-2">
+                            class="xl:w-56 xl:h-48 lg:w-40 lg:h-40 border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 md:p-2 max-[767px]:w-[70%] max-[767px]:py-5 max-[767px]:m-auto max-[767px]:my-4">
                             <i class='bx bx-star lg:text-3xl xl:text-5xl text-cyan-500 mt-4'></i>
                             <h4 class="xl:text-xl lg:text-lg font-mono font-bold my-2">Hackathon Won</h4>
                             <span class="xl:text-5xl lg:text-3xl text-[#aaa]">1</span>
@@ -211,30 +224,34 @@
             </div>
             <!-- Project section  -->
 
-            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden" id="project-sec">
+            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden max-[767px]:w-[100%] overflow-auto"
+                id="project-sec">
                 <div class="">
-                    <h3 class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14">Portfolio</h3>
-                    <div class="flex justify-around">
+                    <h3
+                        class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
+                        Portfolio</h3>
+                    <div class="flex justify-around max-[767px]:flex-col">
                         <!-- project1  -->
                         <div
-                            class="w-[40%] h-[400px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500">
+                            class="w-[40%] h-[400px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 max-[767px]:w-[90%] max-[767px]:m-auto max-[767px]:text-justify">
                             <div class="mt-2"><img src="images/Project-1.png" alt=""
                                     class="w-[85%] border-2 border-cyan-400 rounded-3xl m-auto saturate-100 contrast-125">
                             </div>
-                            <h4 class="text-2xl font-bold mt-2">Let's Code</h4>
+                            <h4 class="text-2xl font-bold mt-2 max-[767px]:text-center">Let's Code</h4>
                             <p class="px-5 mt-2 text-[#aaa] xl:text-[16px] lg:text-sm">Let's Code - the perfect place
                                 for students and coding
                                 enthusiasts
                                 alike to
                                 learn and
                                 improve their skills!</p>
-                            <div class="xl:space-x-3 mt-5">
+                            <div
+                                class="justify-center xl:space-x-3 mt-5 flex max-[767px]:flex-col max-[767px]:w-[80%] max-[767px]:m-auto">
                                 <button
-                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300"><a
+                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300 max-[767px]:my-2 md:mx-2"><a
                                         href="https://github.com/rohanroc/letscode-cs" target="_blank">GitHub
                                     </a></button>
                                 <button
-                                    class="xl:w-32 lg:w-24 xl:text-lg lg:text-sm  py-1 text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300"><a
+                                    class="xl:w-32 lg:w-24 xl:text-lg lg:text-sm  py-1 text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300 md:mx-2"><a
                                         href="https://letscode-cs.arijitsaha5.repl.co/" target="_blank">Live
                                         Demo</a></button>
                             </div>
@@ -243,20 +260,21 @@
                         <!-- project2  -->
 
                         <div
-                            class="w-[40%] h-[400px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500">
+                            class="w-[40%] h-[400px] max-[767px]:h-[420px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 max-[767px]:w-[90%] max-[767px]:m-auto max-[767px]:text-justify max-[767px]:my-5">
                             <div class="mt-2"><img src="images/Project-2.png" alt=""
                                     class="w-[85%] border-2 border-cyan-400 rounded-3xl m-auto">
                             </div>
-                            <h4 class="text-2xl font-bold mt-2">MusicCoin</h4>
+                            <h4 class="text-2xl font-bold mt-2 max-[767px]:text-center">MusicCoin</h4>
                             <p class="px-2 mt-2 text-[#aaa] xl:text-[16px] lg:text-sm">MusicCoin is a web3 music player
                                 that converts your music
                                 files into NFTs . This app is built during a 48 hour hackathon - CodeFest 2023.</p>
-                            <div class="xl:space-x-3 mt-5">
+                            <div
+                                class="justify-center xl:space-x-3 mt-5 flex max-[767px]:flex-col max-[767px]:w-[80%] max-[767px]:m-auto">
                                 <button
-                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300"><a
+                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300 max-[767px]:my-2 md:mx-2"><a
                                         href="https://github.com/rohanroc/musicCoin" target="_blank">GitHub</a></button>
                                 <button
-                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300"><a
+                                    class="xl:w-32 lg:w-24 py-1 xl:text-lg lg:text-sm text-lg border-2 border-cyan-400 rounded-xl hover:bg-white hover:text-cyan-600 duration-300 md:mx-2"><a
                                         href="https://music-coin.arijitsaha5.repl.co" target="_blank">Live
                                         Demo</a></button>
                             </div>
@@ -267,9 +285,12 @@
             </div>
             <!-- Contact section  -->
 
-            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden overflow-auto" id="contact-sec">
+            <div class="w-3/4 rounded-3xl bg-[#222] text-white h-[600px] hidden overflow-auto max-[767px]:w-[100%]"
+                id="contact-sec">
                 <div class="">
-                    <h3 class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14">Contact</h3>
+                    <h3
+                        class="text-4xl font-bold font-[poppins,Helvetica,sans-serif] py-10 mt-4 ml-14 max-[767px]:text-center max-[767px]:ml-0">
+                        Contact</h3>
                     <div class="flex">
                         <div class="flex-col space-y-2 ml-14 pb-5 hidden xl:block">
                             <div class="w-60 h-28 border-2 border-[#444] bg-[#333] text-center">
@@ -290,7 +311,7 @@
                             </div>
                         </div>
                         <!-- form  -->
-                        <div class="flex">
+                        <div class="flex  max-[767px]:flex-col">
                             <div class="flex flex-col space-y-3 ml-5">
                                 <h4 class="text-2xl font-bold pb-5">How <span class="text-cyan-500">Can I Help
                                         You?</span>
@@ -304,16 +325,22 @@
                                 <input type="text" id="subject" name="subject" placeholder="Subject"
                                     class="border-2 border-[#999] bg-[#222] text-[#999] px-3 py-1.5 text-lg rounded-lg"
                                     required>
-                                <div class="pt-3">
+                                <div class="pt-3 hidden md:block">
                                     <button
                                         class="border-2 border-cyan-500 text-[#f5f5f5] px-7 py-2 rounded-xl text-lg hover:bg-white hover:text-cyan-500 duration-200"
                                         onclick="submitForm()">Submit</button>
                                 </div>
                             </div>
-                            <div class="ml-5 mt-16">
+                            <div class="ml-5 mt-16 max-[767px]:mt-4">
                                 <textarea name="message" id="message" cols="24" rows="7"
                                     class="border-2 border-[#999] bg-[#222] text-[#999] px-3 py-1.5 text-lg rounded-lg"
                                     placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="pt-3 ml-5 md:hidden">
+                                <button
+                                    class="border-2 border-cyan-500 text-[#f5f5f5] px-7 py-2 rounded-xl text-lg hover:bg-white hover:text-cyan-500 duration-200"
+                                    onclick="submitForm()">Submit</button>
                             </div>
                         </div>
                     </div>
