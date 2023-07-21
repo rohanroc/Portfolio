@@ -12,7 +12,7 @@
 
 <body class="bg-gradient-to-r from-indigo-500 via-cyan-500 to-blue-500 box-border">
     <!-- <div class="text-2xl font-bold text-center my-10">Mobile Version Not Yet Completed.</div> -->
-    <header class="">
+    <header class="hidden md:block">
         <div
             class="xl:w-1/5 md:w-[35%] lg:w-[29%] md:bg-[#444] md:text-4xl md:space-x-3 xl:space-x-2 md:m-auto md:text-center md:py-2 md:rounded-full md:mt-4
              max-[767px]:w-[45%] max-[767px]:bg-[#444] max-[767px]:text-2xl max-[767px]:space-x-2 max-[767px]:rounded-full max-[767px]:p-0.5 max-[767px]:m-auto max-[767px]:mt-2 max-[767px]:text-center">
@@ -260,7 +260,7 @@
                         <!-- project2  -->
 
                         <div
-                            class="w-[40%] h-[400px] max-[767px]:h-[420px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 max-[767px]:w-[90%] max-[767px]:m-auto max-[767px]:text-justify max-[767px]:my-5">
+                            class="w-[40%] h-[400px] max-[767px]:h-[420px] border-2 border-[#444] bg-[#333] rounded-xl text-center hover:-translate-y-6 duration-500 max-[767px]:w-[90%] max-[767px]:m-auto max-[767px]:text-justify max-[767px]:my-10">
                             <div class="mt-2"><img src="images/Project-2.png" alt=""
                                     class="w-[85%] border-2 border-cyan-400 rounded-3xl m-auto">
                             </div>
@@ -311,8 +311,8 @@
                             </div>
                         </div>
                         <!-- form  -->
-                        <div class="flex  max-[767px]:flex-col">
-                            <div class="flex flex-col space-y-3 ml-5">
+                        <div class="flex  max-[767px]:flex-col max-[767px]:m-auto">
+                            <div class="flex flex-col space-y-3 ml-5 max-[767px]:ml-0">
                                 <h4 class="text-2xl font-bold pb-5">How <span class="text-cyan-500">Can I Help
                                         You?</span>
                                 </h4>
@@ -331,13 +331,13 @@
                                         onclick="submitForm()">Submit</button>
                                 </div>
                             </div>
-                            <div class="ml-5 mt-16 max-[767px]:mt-4">
+                            <div class="ml-5 mt-16 max-[767px]:mt-4 max-[767px]:ml-0">
                                 <textarea name="message" id="message" cols="24" rows="7"
                                     class="border-2 border-[#999] bg-[#222] text-[#999] px-3 py-1.5 text-lg rounded-lg"
                                     placeholder="Message" required></textarea>
                             </div>
 
-                            <div class="pt-3 ml-5 md:hidden">
+                            <div class="pt-3 ml-5 md:hidden max-[767px]:mb-4 max-[767px]:m-auto">
                                 <button
                                     class="border-2 border-cyan-500 text-[#f5f5f5] px-7 py-2 rounded-xl text-lg hover:bg-white hover:text-cyan-500 duration-200"
                                     onclick="submitForm()">Submit</button>
@@ -348,6 +348,21 @@
             </div>
         </div>
     </div>
+
+    <!-- menu icons for small devices  -->
+    <footer class="md:hidden max-[767px]:mt-2 max-[767px]:mb-4">
+        <div
+            class="xl:w-1/5 md:w-[35%] lg:w-[29%] md:bg-[#444] md:text-4xl md:space-x-3 xl:space-x-2 md:m-auto md:text-center md:py-2 md:rounded-full md:mt-4
+     max-[767px]:w-[45%] max-[767px]:bg-[#444] max-[767px]:text-2xl max-[767px]:space-x-2 max-[767px]:rounded-full max-[767px]:p-0.5 max-[767px]:m-auto max-[767px]:mt-2 max-[767px]:text-center">
+            <i class='bx bx-home text-[#aaa] hover:text-cyan-300 cursor-pointer' id="home-icon" onclick="homeBtn()"></i>
+            <i class='bx bx-user text-[#aaa] hover:text-cyan-300 cursor-pointer' id="about-icon"
+                onclick="aboutBtn()"></i>
+            <i class='bx bx-code-alt text-[#aaa] hover:text-cyan-300 cursor-pointer' id="project-icon"
+                onclick="projectBtn()"></i>
+            <i class='bx bx-envelope text-[#aaa] hover:text-cyan-300 cursor-pointer' id="contact-icon"
+                onclick="contactBtn()"></i>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

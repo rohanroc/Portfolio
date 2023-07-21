@@ -869,6 +869,11 @@ video {
         margin: auto
     }
 
+    .max-\[767px\]\:my-10 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem
+    }
+
     .max-\[767px\]\:my-2 {
         margin-top: .5rem;
         margin-bottom: .5rem
@@ -882,6 +887,10 @@ video {
     .max-\[767px\]\:my-5 {
         margin-top: 1.25rem;
         margin-bottom: 1.25rem
+    }
+
+    .max-\[767px\]\:mb-4 {
+        margin-bottom: 1rem
     }
 
     .max-\[767px\]\:ml-0 {
